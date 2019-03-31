@@ -5,7 +5,10 @@ import 'package:kodune_nr_2/pages/chat_screen.dart';
 import 'package:kodune_nr_2/pages/status_screen.dart';
 
 class WhatsAppHome extends StatefulWidget {
-    @override
+  var cameras;
+  WhatsAppHome(this.cameras);
+
+  @override
   _WhatsAppHomeState createState() => new _WhatsAppHomeState();
 }
 
@@ -41,16 +44,17 @@ class _WhatsAppHomeState extends State<WhatsAppHome>
           ],
         ),
         actions: <Widget>[
-          new Icon(Icons.search), new Padding(
-            padding:const EdgeInsets.symmetric(horizontal: 5.0),
-          ), 
+          new Icon(Icons.search),
+          new Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 5.0),
+          ),
           new Icon(Icons.more_vert)
         ],
       ),
-      body:new TabBarView(
+      body: new TabBarView(
         controller: _tabController,
         children: <Widget>[
-          new CameraScreen(),
+          new CameraScreen(widget.cameras),
           new ChatScreen(),
           new StatusScreen(),
           new CallsScreen(),
