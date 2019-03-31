@@ -2,9 +2,7 @@
 
 # WhatsApp UI kloon
 
-<img src="https://i.imgur.com/5koc6tk.png" height="450">
-<img src="https://i.imgur.com/7fuf0NR.png" height="450">
-<img src="hhttps://i.imgur.com/gJ4lKRd.png" height="450">
+<img src="https://i.imgur.com/5koc6tk.png" height="450"><img src="https://i.imgur.com/7fuf0NR.png" height="450"><img src="https://i.imgur.com/gJ4lKRd.png" height="450">
 
 ### 6. Git projektis on README.md, mis kirjeldab projekti seadmistamist ja viide juhendile.
 
